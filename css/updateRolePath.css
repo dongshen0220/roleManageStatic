@@ -1,0 +1,19 @@
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>input{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>textarea{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>select{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>.u-down img{
+    width: 12px;
+    height: 12px;;
+}

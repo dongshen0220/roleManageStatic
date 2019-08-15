@@ -1,0 +1,183 @@
+
+/* head step nav css :start */
+.g-container > .g-header > .m-header > .m-hd-center > .u-nav{
+    overflow: hidden;
+    height: 100px;
+    width: auto;
+    margin: 0px 0;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .u-nav ul{
+    height: 100%;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .u-nav ul li{
+    position: relative;
+    width: auto;
+    height: 40px;
+    box-sizing: border-box;
+    padding:10px 30px 10px 30px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 10px;
+    background-color:#C8CBFF;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-firstLine{
+    margin-top: 30px;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-secondLine{
+    margin-top: 10px;
+}
+
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-main{
+    width: 246px;
+    height: 70px;
+    padding: 19px 75px 18px 75px;
+    margin: 15px 0;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-main span{
+    font-size: 24px;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li span{
+    font-size: 14px;
+    color: #404CF6;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-current,
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-current-main{
+    overflow:hidden;
+    background-color: #fff;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .u-nav ul li.u-current:after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-size: auto;
+    background: #DF153D url("../img/add1.png") no-repeat;
+    background-size:10px;
+    background-position-x:10px;
+    background-position-y:20px;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-add{
+    padding-left:62px;
+    border: 2px dashed #fff;
+    background-color: #404CF6;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .u-nav ul li.u-add:after{
+    content: '';
+    position: absolute;
+    top:12px;
+    left: 36px;
+    width:16px;
+    height:16px;
+    background-size: auto;
+    background: #404CF6 url("../img/add1.png") no-repeat center;
+    background-size:16px;
+}
+.g-container > .g-header > .m-header > .m-hd-center >  .u-nav ul li.u-add span{
+    color: #fff;
+}
+/* /head step nav css :end */
+
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content-formargin{
+    margin-top: 30px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>input{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+    background: #F9F9F9;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-input>textarea{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+    background: #F9F9F9;
+}
+/* m-content-top :start */
+.g-container > .g-main>.g-mainc>.m-content-top{
+    overflow: hidden;
+    width: 100%;
+    height: 61px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.g-container > .g-main>.g-mainc>.m-content-top div{
+     padding:17px 0 ;
+     display: inline-block;
+ }
+ .g-container > .g-main>.g-mainc>.m-content-top div.u-active{
+    border-bottom: 2px solid #404CF6;
+}
+.g-container > .g-main>.g-mainc>.m-content-top div.u-active span{
+    color: #404CF6;
+}
+.g-container > .g-main>.g-mainc>.m-content-top .u-add{
+    margin-left: 79px;
+}
+.g-container > .g-main>.g-mainc>.m-content-top div span{
+    font-size: 18px;
+}
+/* /m-content-top :end */
+
+ .g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table{
+	width: 100%;
+    border: 1px solid #E9E9E9; 
+    border-radius: 8px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    color: #222222;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .m-table-head{
+	display: flex;
+	align-items: center;
+	direction: row;
+	background: #F9F9F9 ;
+	height: 42px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .m-table-info{
+	display: flex;
+	align-items: center;
+	direction: row;
+	background: #ffffff ;
+	height: 60px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-fontcolor{
+    color:red;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-solid{
+	border: 1px solid #F9F9F9;
+	border-width: 100%;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-dashed{
+	border: 1px dashed #F9F9F9;
+	border-width: 100%;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-first-column{
+    text-align: center;
+	flex: 2;
+	cursor:pointer;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-second-column{
+    text-align: center;
+	flex: 3;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-third-column{
+    text-align: center;
+	flex: 1;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-fourth-column .u-head-font{
+    color: #404CF6;
+}
+
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-fourth-column img{ 
+    padding: 6px;
+    width: 12px;
+    height: 12px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.m-table .u-underline{ 
+    text-decoration: underline;
+} 

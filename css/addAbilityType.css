@@ -1,0 +1,65 @@
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip{
+    font-size: 12px;
+    color: #DD3C3C;
+    display:flex;
+    align-items: center;
+    padding-left:10px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip1{
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.g-container > .g-main>.m-buttons{
+    padding-bottom: 337px;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .m-step>.u-step-ability{
+    height: 70px;
+    width: 246px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+    line-height: 70px;
+    position:relative;
+    overflow: hidden;
+
+}
+.g-container > .g-header > .m-header > .m-hd-center > .m-step>.u-step-ability>.u-close{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     width: 35px;
+     height: 15px;
+     top: 0px;
+     right: -10px; 
+     padding-bottom: 2px;
+     background: #DF153D;
+     transform: rotate(45deg);
+    }
+.g-container > .g-header > .m-header > .m-hd-center > .m-step>.u-step-ability>.u-close > img{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 7px;
+}
+
+.g-container > .g-header > .m-header > .m-hd-center > .m-step>.u-step4-addnode{
+    margin-left: 20px;
+    height: 40px;
+    width: 178px;
+    border: 2px dashed #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+.g-container > .g-header > .m-header > .m-hd-center > .m-step>.u-step4-addnode>img{
+    width:14px;
+    height:14px;
+    padding:0 2px;
+    transform: rotate(45deg);
+}

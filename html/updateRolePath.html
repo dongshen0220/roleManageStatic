@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>修改角色路径</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/commonHeader.css" />
+    <link rel="stylesheet" type="text/css" href="../css/commonBody.css" />
+    <link rel="stylesheet" type="text/css" href="../css/addRolePath.css" />
+    <link rel="stylesheet" type="text/css" href="../css/updateRolePath.css" />
+</head>
+
+<body>
+    <div class="g-container">
+        <div class="g-header">
+            <div class="m-header">
+                <div class="m-nav">
+                    <div class="u-logo"></div>
+                    <div class="u-title">标题标题</div>
+                    <div class="m-menu">
+                        <span class="z-active">角色管理</span>
+                        <span>能力类型</span>
+                        <span>培养计划</span>
+                        <span>角色排行榜</span>
+                    </div>
+                    <div class="m-user">
+                        <div class="u-user_msg"></div>
+                        <div class="u-user_img"></div>
+                        <div class="u-user_name"><span>奥利奥 管理员</span></div>
+                        <div class="u-user_configImg"></div>
+                    </div>
+                </div>
+                <div class="m-hd-center">
+                    <div class="m-step">
+                        <div class="u-step1">
+                            <span>项目经理项目经理</span>
+                        </div>
+                        <div class="u-arrow"><img src="../img/arrow.png" /></div>
+                        <div class="u-step2"><span>项目经理项目经理1级</span></div>
+                        <div class="u-arrow">
+                            <div class="u-add">
+                                <img src="../img/add.png" alt="">
+                            </div>
+                            <img src="../img/arrow.png" />
+                        </div>
+                        <div class="u-step3">
+                            <div class="u-close"><img src="../img/close.png" /></div>
+                            <span>角色路径名称</span>
+                        </div>
+                        <div class="u-arrow"><img src="../img/arrow.png" /></div>
+                        <div class="u-step4">
+                            <img src="../img/close.png" >
+                            <span>新增角色路径</span></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="g-main">
+            <div class="g-mainc">
+                <div class="m-content-top">
+                    <span>新增角色路径</span>
+                </div>
+                <div class="m-content-main">
+                    <div class="m-content_input">
+                        <div class="u-need">*</div>
+                        <div class="u-input">
+                            <input type="text" value="项目经理2级">
+                            <span>0/10</span>
+
+                        </div>
+                    </div>
+                    <div class="m-content_input m-input-formargin">
+                        <div class="u-need"></div>
+                        <div class="u-input">
+                            <textarea>项目经理( Project Manager ) ，从职业角度，是指企业建立以项目经理责任制为核心，对项目实行质量、安全、进度、成本管理的责任保证体系和全面提高项目管理水平设立的重要管理...</textarea>
+                            <span>0/200</span>
+                        </div>
+                    </div>
+                    <div class="m-content_input m-input-formargin">
+                        <div class="u-need"></div>
+                        <div class="u-input">
+                            <select>
+                                <option>合格分数  220</option>
+                            </select>
+                            <div class="u-down">
+                                <img src="../img/graydown.png" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-mainc g-mainc-formargin">
+                <div class="m-content-top">
+                    <span>选择该角色路径能力类型</span>
+                </div>
+                <div class="m-content-main">
+                    <div class="m-content_input">
+                        <table class="m-table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="allcheck" onclick="selectAll(this.checked)" />
+                                        <label for="allcheck" class="u-label"></label>全选</th>
+                                    <th>能力类型</th>
+                                    <th>说明</th>
+                                    <th>默认分值</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" id="check1" name="check" />
+                                        <label for="check1" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check2" name="check" checked />
+                                        <label for="check2" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-bluedown">选择技术节点</span><img src="../img/bluedown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr class="u-yellow">
+                                    <td><input type="checkbox" id="check3" name="check" checked />
+                                        <label for="check3" class="u-label"></label></td>
+                                    <td class="u-hover">技术节点技术节点1</td>
+                                        <!-- more tip 弹出框 -->
+                                        <!-- <div class="m-tip">
+                                            <div class="m-contents">
+                                                <div class="u-title">
+                                                    <span>技术节点技术节点4</span>
+                                                </div>
+                                                <div class="u-content">
+                                                    <div class="u-item">
+                                                        <span>类型：</span>
+                                                        <span> 能力实验楼课程</span>
+                                                    </div>
+                                                    <div class="u-item">
+                                                        <span>URL:</span>
+                                                        <span>https://www.ui.cn/detail/255910.html</span>
+                                                    </div>
+                                                    <div class="u-item">
+                                                        <span>描述:</span>
+                                                        <span>用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。
+                                                        </span>
+                                                    </div>
+                                                    <div class="u-item">
+                                                        <span>分值:</span>
+                                                        <span> 10分</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="u-arrow"></div>
+                                        </div> -->
+                                        <!-- /more tip 弹出框 -->
+                                    
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析...</td>
+                                    <td>10</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="u-yellow  u-underline">
+                                    <td><input type="checkbox" id="check5" name="check" />
+                                        <label for="check5" class="u-label"></label></td>
+                                    <td>技术节点技术节点2</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析...</td>
+                                    <td>20</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="u-yellow">
+                                    <td><input type="checkbox" id="check6" name="check" />
+                                        <label for="check6" class="u-label"></label></td>
+                                    <td>技术节点技术节点技术技术节点…</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析...</td>
+                                    <td>20</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="u-yellow u-underline">
+                                    <td><input type="checkbox" id="check7" name="check" checked />
+                                        <label for="check7" class="u-label"></label></td>
+                                    <td>技术节点技术节点4</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析...</td>
+                                    <td>10</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" id="check8" name="check" checked />
+                                        <label for="check8" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check9" name="check" />
+                                        <label for="check9" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check10" name="check" />
+                                        <label for="check10" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check11" name="check" checked />
+                                        <label for="check11" class="u-label"></label></td>
+                                    <td class="u-hover1">需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check12" name="check" checked />
+                                        <label for="check12" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check13" name="check" />
+                                        <label for="check13" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="check14" name="check" />
+                                        <label for="check14" class="u-label"></label></td>
+                                    <td>需求分析</td>
+                                    <td>软件需求分析、系统需求分析或需求分析工程等，是开发人员经过深入细致的调研和分析</td>
+                                    <td>60</td>
+                                    <td><span class="u-greydown">选择技术节点</span><img src="../img/graydown.png"
+                                            width="12px" height="12px"></td>
+                                </tr>
+                                <tr>
+                                    <td>总计</td>
+                                    <td colspan="2"></td>
+                                    <td>100</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="m-buttons">
+                <div class="u-cancel">取消</div>
+                <div class="u-save">保存</div>
+            </div>
+        </div>
+        <div class="g-footer">
+            <div class="u-footer">
+                <span>版权所有：中国航信重庆研发中心 Copyright © 2015 All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+    <!-- more tip 弹出框 -->
+    <div class="m-tip" id="divinfo" style="visibility:hidden;">
+        <div class="m-contents">
+            <div class="u-title">
+                <span>技术节点技术节点4</span>
+            </div>
+            <div class="u-content">
+                <div class="u-item">
+                    <span>类型：</span>
+                    <span> 能力实验楼课程</span>
+                </div>
+                <div class="u-item">
+                    <span>URL:</span>
+                    <span>https://www.ui.cn/detail/255910.html</span>
+                </div>
+                <div class="u-item">
+                    <span>描述:</span>
+                    <span>用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。用户调研,指通过各种方式得到受访者的建议和意见,并对此进行汇总,研究事务的总特征。
+                    </span>
+                </div>
+                <div class="u-item">
+                    <span>分值:</span>
+                    <span> 10分</span>
+                </div>
+            </div>
+        </div>
+        <div class="u-arrow"></div>
+    </div>
+    <!-- /more tip 弹出框 -->
+</body>

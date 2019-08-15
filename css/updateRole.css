@@ -1,0 +1,34 @@
+.g-container > .g-main>.g-mainc>.m-content_main>.m-content_input>.u-input>input{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+}
+.g-container > .g-main>.g-mainc>.m-content_main>.m-content_input>.u-input>textarea{
+    font-size: 16px;
+    color: #222222;
+    font-family: PingFangSC-Regular;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip{
+    font-size: 12px;
+    color: #DD3C3C;
+    display:flex;
+    align-items: center;
+    padding-left:10px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip img{
+    width:16px;
+    height:16px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip1{
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.g-container > .g-main>.g-mainc>.m-content-main>.m-content_input>.u-tip1 img{
+    width:16px;
+    height:16px;
+}
+.g-container > .g-main>.m-buttons{
+    padding-bottom: 337px;
+}
+

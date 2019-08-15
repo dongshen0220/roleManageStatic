@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>批量处理页</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/commonHeader.css" />
+    <link rel="stylesheet" type="text/css" href="../css/batchProcess.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/batchProcess.js"></script>
+</head>
+
+<body>
+    <div class="g-container">
+        <div class="g-header">
+            <div class="m-header">
+                <div class="m-nav">
+                    <div class="u-logo"></div>
+                    <div class="u-title">标题标题</div>
+                    <div class="m-menu">
+                        <span class="z-active">角色管理</span>
+                        <span>能力类型</span>
+                        <span>培养计划</span>
+                        <span>角色排行榜</span>
+                    </div>
+                    <div class="m-user">
+                        <div class="u-user_msg"></div>
+                        <div class="u-user_img"></div>
+                        <div class="u-user_name"><span>奥利奥 管理员</span></div>
+                        <div class="u-user_configImg"></div>
+                    </div>
+                </div>
+                <div class="m-hd-center">
+                    <div class="u-hd-left">
+                        <div class="u-status"><span>已创建24种角色模型</span></div>
+                        <div class="m-button">
+                            <div class="u-button-common u-button1" id="chooseAll" onclick="chooseAll()"><span>批量发布</span></div>
+                            <div class="u-button-common u-button2"><span>批量删除</span></div>
+                            <div class="u-button-common u-button3" id="unchooseAll" onclick="unchooseAll()"><span>取消批处理</span></div>
+                        </div>
+                        
+                    </div>
+                    <div class="u-hd-right">
+                        <div class="u-search-icon">
+                            <img src="../img/search.png" width="20px" />
+                        </div>
+                        <input type="text" class="u-search" placeholder="快速查找">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="g-main">
+            <div class="m-main-top"></div>
+            <div class="m-main-content">
+                <!-- 第一栏 -->
+                <div class="m-main-part">
+                    <!-- 第一栏第一格 -->
+                    <div class="m-part-box">
+                        <div class="u-toRoleIcon">
+                            <img src="../img/guanbi.png" width="100%"
+                                onclick="javascript:window.location.href='../html/addRole.html'">
+                        </div>
+                    </div>
+                    <!-- /第一栏第一格 -->
+
+                    <!-- 第一栏box2 -->
+                    <div class="m-part-box">
+                        <div class="u-choose1"><img src="../img/unchoose.png" /></div>
+                        <!-- box内容 -->
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box底部按钮选项-->
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="update()">
+                                <img src="../img/update.png"><span>修改</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="publish()">
+                                <img src="../img/publish.png"><span>发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /第一栏box2 -->
+
+                    <!-- 第一栏box3 -->
+                    <div class="m-part-box">
+                        <div class="u-choose2"><img src="../img/unchoose.png" /></div>
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="update()">
+                                <img src="../img/update.png"><span>修改</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="publish()">
+                                <img src="../img/publish.png"><span>发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第一栏box3 -->
+                </div>
+                <!-- /第一栏 -->
+
+                <!-- 第2栏 -->
+                <div class="m-main-part">
+                    <!-- 第2栏第一格 -->
+                    <div class="m-part-box">
+                        <div class="u-choose1"><img src="../img/unchoose.png" /></div>
+                        <!-- box内容 -->
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /box内容 -->
+
+                        <!-- box底部按钮选项-->
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="update()">
+                                <img src="../img/update.png"><span>修改</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="publish()">
+                                <img src="../img/publish.png"><span>发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                        <!-- /box底部按钮选项-->
+                    </div>
+                    <!-- /第2栏第一格 -->
+
+                    <!-- 第2栏box2 -->
+                    <div class="m-part-box">
+                        <div class="u-choose2"><img src="../img/unchoose.png" /></div>
+                        <!-- box内容 -->
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /box内容 -->
+
+                        <!-- box底部按钮选项-->
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="update()">
+                                <img src="../img/update.png"><span>修改</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="publish()">
+                                <img src="../img/publish.png"><span>发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                        <!-- /box底部按钮选项-->
+                    </div>
+                    <!-- /第2栏box2 -->
+
+                    <!-- 第2栏box3 -->
+                    <div class="m-part-box">
+                        <div class="u-choose1"><img src="../img/unchoose.png" /></div>
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="published()">
+                                <img src="../img/published.png"><span>已发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /第2栏 -->
+
+                <!-- 第3栏 -->
+                <div class="m-main-part">
+                    <!-- 第3栏第一格 -->
+                    <div class="m-part-box">
+                        <div class="u-choose2"><img src="../img/unchoose.png" /></div>
+                        <!-- box内容 -->
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box底部按钮选项-->
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="published()">
+                                <img src="../img/published.png"><span>已发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第3栏box2 -->
+                    <div class="m-part-box">
+                            <div class="u-choose2"><img src="../img/unchoose.png" /></div>
+                        <!-- box内容 -->
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box底部按钮选项-->
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="published()">
+                                <img src="../img/published.png"><span>已发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第3栏box3 -->
+                    <div class="m-part-box">
+                            <div class="u-choose1"><img src="../img/unchoose.png" /></div>
+                        <div class="m-box-body">
+                            <div class="u-box-title">
+                                <span>项目经理</span>
+                            </div>
+                            <div class="u-box-desc">
+                                <span>从职业角度，是指企业建立以项目经理责任制为核心对项目实行质量、安全、进度、建立经理责任制成…</span>
+                            </div>
+                            <div class="m-box-list">
+                                <div class="u-item">
+                                    <div class="u-sort"><span>1</span></div>
+                                    <div class="u-job"><span>项目经理1级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>2</span></div>
+                                    <div class="u-job"><span>项目经理2级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>3</span></div>
+                                    <div class="u-job"><span>项目经理3级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>4</span></div>
+                                    <div class="u-job"><span>项目经理4级</span></div>
+                                </div>
+                                <div class="u-item">
+                                    <div class="u-sort"><span>5</span></div>
+                                    <div class="u-job"><span>项目经理5级</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-box-footer">
+                            <div class="u-item" onclick="published()">
+                                <img src="../img/published.png"><span>已发布</span>
+                            </div>
+                            <div class="u-split"></div>
+                            <div class="u-item" onclick="remove()">
+                                <img src="../img/remove.png"><span>删除</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /第3栏 -->
+            </div>
+
+            <div class="m-page">
+                <span class="u-pre">上一页</span>
+                <span class="u-page z-active">1</span>
+                <span class="u-page">2</span>
+                <span class="u-page">3</span>
+                <span class="u-page">4</span>
+                <span class="u-page">5</span>
+                <span class="u-next">下一页</span>
+            </div>
+        </div>
+        <div class="g-footer">
+            <div class="u-footer">
+                <span>版权所有：中国航信重庆研发中心 Copyright © 2015 All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+    <div class="layer"></div>
+    <!-- publish -->
+    <div class="m-content publish_layer">
+        <div class="m-header">
+            <div class="u-title"><span>提示</span></div>
+            <div class="u-close">
+                <img src="../img/guanbi.png" width="14" height="14" alt="">
+            </div>
+        </div>
+        <div class="m-body">
+            <div class="u-icon">
+                <img src="../img/jinggaoIccon.png" width="30" height="30" alt="">
+            </div>
+            <div class="u-msg"><span>发布角色后，将不可修改。您还要继续吗？</span></div>
+        </div>
+        <div class="m-footer">
+            <div class="u-cancel"><span>取消</span></div>
+            <div class="u-sure"><span>确定</span></div>
+        </div>
+    </div>
+    <!-- update -->
+    <div class="m-content update_layer">
+        <div class="m-header">
+            <div class="u-title">提示</div>
+            <div class="u-close">
+                <img src="../img/guanbi.png" width="14" height="14" alt="">
+            </div>
+        </div>
+        <div class="m-body">
+            <div class="u-icon">
+                <img src="../img/jinggaoIccon.png" width="30" height="30" alt="">
+            </div>
+            <div class="u-msg">确定该操作？</div>
+        </div>
+        <div class="m-footer">
+            <div class="u-cancel">取消</div>
+            <div class="u-sure">确定</div>
+        </div>
+    </div>
+    <!-- delete -->
+    <div class="m-content delete_layer">
+        <div class="m-header">
+            <div class="u-title">提示</div>
+            <div class="u-close">
+                <img src="../img/guanbi.png" width="14" height="14" alt="">
+            </div>
+        </div>
+        <div class="m-body">
+            <div class="u-icon">
+                <img src="../img/jinggaoIccon.png" width="30" height="30" alt="">
+            </div>
+            <div class="u-msg">删除角色后将不可还原，你还要继续吗？</div>
+        </div>
+        <div class="m-footer">
+            <div class="u-cancel">取消</div>
+            <div class="u-sure">确定</div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
